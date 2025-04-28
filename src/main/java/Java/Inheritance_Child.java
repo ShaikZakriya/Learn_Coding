@@ -13,10 +13,6 @@ public class Inheritance_Child extends Inheritance_Parent{
 		int sum = obj.amount;
         System.out.println(sum);
 		
-		
-		
-		
-
 	}
  
     public static void home2() {

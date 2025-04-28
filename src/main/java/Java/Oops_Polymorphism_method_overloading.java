@@ -5,7 +5,7 @@ public class Oops_Polymorphism_method_overloading {
     	 public static void main(String[] args) {
 		
     	
-     Oops_Polymorphism_method_overloading obj = new Oops_Polymorphism_method_overloading();
+        Oops_Polymorphism_method_overloading obj = new Oops_Polymorphism_method_overloading();
     	obj.addition(25, 50);
         obj.addition("Shaik", "Zakriya");
     	obj.addtion(75, "Coding");	

@@ -7,27 +7,35 @@ public class Static_keyword {
 		Static_keyword();
 
 	}
-	
 
-	class car 
-	{
-		static int Wheels = 4;
-		
-		static void displaywheels()
-		{
-			System.out.println("wheels: " + Wheels);
-		}
-	}
-	
-	
-	
-	private static void Static_keyword() {
+     private static void Static_keyword() {
 		
 		car.displaywheels();
 		
 	}
 
 }
+ 
+      class car 
+  {
+	  static int Wheels = 4;
+	
+	  static void displaywheels()
+	
+	 
+	  {
+		System.out.println("wheels: " + Wheels);
+	  }
+}
+
+
+
+
+
+        //we dont need to create any object for static we can directly access the entire code by class itself
+
+          
+
 
 /* 
  
