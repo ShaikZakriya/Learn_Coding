@@ -11,10 +11,6 @@ public class Final_Keyword {
 
 	private static void Final_keyword() {
 		
-		/*The final variable is nothing but a constant in java the value of the varaible cannot be updated it's 
-		  final value and the same final keyword or non-access modifer when we specify before a method that particular method 
-		  cannot be overridden by the child classes  */
-		
 	}
 		
 		final int a = 10;
@@ -32,5 +28,30 @@ public class Final_Keyword {
 		
 		
 	}
+
+
+   /*
+    
+    Definition of final:
+    The final keyword means something cannot be changed after it is set.
+
+    Purpose of final:
+    We use final to make a variable constant, prevent a method from being overridden, or stop a class from being inherited.
+
+    Easy examples to imagine:
+
+    Final variable: Once you give it a value, you can't change it. (Like your birthdate — it never changes.)
+
+    Final method: No one can modify its behavior in child classes.
+
+    Final class: No one can make a subclass (child class) from it.
+    
+    
+    */
+
+
+
+
+
 
 

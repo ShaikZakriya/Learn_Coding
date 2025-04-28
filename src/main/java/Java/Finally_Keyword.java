@@ -35,13 +35,7 @@ public class Finally_Keyword {
 
 	private static void finally_keyword() {
 		
-		/* try block is a block that contains only risky code 
-		   
-		   catch block it is used to handle the exception 
-		   
-		   finally block is a realtime block and the main purpose of finally block to handle the resources.
-		 */
-	
+		
 		
 		try 
 		{
@@ -67,7 +61,28 @@ public class Finally_Keyword {
 		
 		
 		}
-}
+   }
+
+
+     /*
+      Definition of finally:
+      The finally keyword is used in exception handling to create a block of code that always runs, 
+      no matter what happens (whether an error occurs or not).
+
+      Purpose of finally:
+      We use finally to write important code that must be executed, like closing a file, releasing memory, 
+      or closing a database connection — even if an error happens.
+
+      Simple idea:
+      Try-catch block may or may not run fully, but finally block always runs.
+      
+      */
+
+
+
+
+
+
 
 
 

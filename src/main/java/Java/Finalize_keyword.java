@@ -14,60 +14,45 @@ public class Finalize_keyword {
 
 	private static void Finalize_keyword() {
 		
-		class BrowserHandler {
-		    WebDriver driver;
-
-		    BrowserHandler() {
-		        System.out.println("Opening browser...");
-		        driver = new ChromeDriver();  // Browser open ho raha hai
-		    }
-
-		    // finalize method to close browser
-		    @Override
-		    protected void finalize() throws Throwable {
-		        if (driver != null) {
-		            System.out.println("Closing browser from finalize...");
-		            driver.quit();  // Browser band ho jayega
+		        class MyClass {
+		        @Override
+		        protected void finalize() throws Throwable {
+		            System.out.println("Finalize method called");
 		        }
 		    }
-		}
 
-		       class MainTest {
-		    public static void main(String[] args) {
-		        BrowserHandler bh = new BrowserHandler();  // Browser open
+		         MyClass obj = new MyClass();
+		        obj = null; // Object ko null kar diya
 
-		        // Kaam ho gaya but bh object ko null kar diya
-		        bh = null;
+		        System.gc(); // Garbage collector ko request ki
 
-		        // Garbage Collector ko request
-		        System.gc();
+		        // Thoda time wait karte hain taake garbage collection ho sake
+		        try {
+		            Thread.sleep(1000); // 1 second ka delay
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }
 
-		        System.out.println("Test complete.");
+		        System.out.println("Main method ends");
 		    }
-		}
-		
-	}		
-		
-}
-
 	
-  /*  
-   * finalize() ek method hai jo object destroy hone se pehle call hoti hai.
+}    
 
-     Real-time mein iska use cleanup ke liye hota hai (jaise browser close karna, file close karna).
+      /*
+       
+       Definition of finalize:
+       finalize is a method in Java that is called just before an object is destroyed by the garbage collector.
 
-     Aajkal production code mein finalize pe jyada depend nahi karte.
+       Purpose of finalize:
+       We use finalize to perform cleanup — like closing files, releasing resources, 
+       or doing last tasks before the object is deleted from memory.
 
-     Garbage Collector finalize method ko kab call karega, ye Java decide karta hai (hum nahi).
-
-     Modern solutions: try-with-resources, AutoCloseable interface.
-   */
-
-
+       Simple way to think:
+       Before throwing an old object away, Java gives it one last chance to clean up using finalize().
+       
+       */
 
 
-    /*The main purpose of finalize method is to release the resource that is allocated by un-used object,
-      before removing un-used object by garbage collector
 
-      jo b unused object hai so jis b resouce ko allocate karke rakha hai us resource ko de-allocate karne ka kaam karte hai
-    */     
+
+
