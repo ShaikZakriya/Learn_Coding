@@ -10,40 +10,58 @@ public class Static_keyword {
 
      private static void Static_keyword() {
 		
-		car.displaywheels();
-		
+		student s1 = new student("Shaik");
+		student s2 = new student("Zakriya");
+               
+		    s1.display();
+		    s2.display();
+      }
 	}
 
-}
- 
-      class car 
-  {
-	  static int Wheels = 4;
-	
-	  static void displaywheels()
-	
-	 
-	  {
-		System.out.println("wheels: " + Wheels);
-	  }
-}
+
+     class student  {
+     
+    	 static String college = "Masters";
+     	
+     	String name;
+     	
+     	student(String name) {
+     		
+     		
+     		this.name=name;
+     		
+     	}
+   
+     void display() {
+    	 
+    	 System.out.println(name + " " + college);
+     }
+     
+
+   }
 
 
-
+       
 
 
         //we dont need to create any object for static we can directly access the entire code by class itself
 
-          
-
-
-/* 
+  /* 
  
-      Definition:
-      The static keyword means that a variable or method belongs to the class itself, not to any specific object.
+     Definition:
+     The static keyword in Java is used to define members (variables, methods, or inner classes) 
+     that belong to the class rather than any specific object.
+
 
       Purpose:
-      We use static to share a variable or method across all objects and to access it without creating an object.
+      It allows us to access methods or variables without creating an object of the class. 
+      It's memory efficient and useful when the behavior or data is shared across all instances.
 	
-*/
+   */
+
+
+     
+
+
+
 	

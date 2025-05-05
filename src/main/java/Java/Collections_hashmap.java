@@ -14,19 +14,34 @@ public class Collections_hashmap {
 		
 		//Country (key)       Population(Value)
 		//Key should be unique    & Hashmap or unorder wise  
-		HashMap<String, Integer> map = new HashMap<String, Integer>();
+		/*HashMap<String, Integer> map = new HashMap<String, Integer>();
+		
 		
 		//Insertion
 		map.put("India", 120);
 		map.put("USA", 30);
 		map.put("China", 150);
 		
+		//Iteration
+		for (String name : map.keySet())
+		{
+			System.out.println(map.get(name));
+		}
+		
+		
+		map.put("NewZealand",300);
 		System.out.println(map);
 		
-		map.put("China", 185);
-		System.out.println(map);
 		
-		//Search
+		
+		//Get the value
+	  //  map.get("India");
+      //  System.out.println(map.get("India"));
+		
+		
+		
+		
+	/*	//Search
 		if(map.containsKey("China"))
 		{
 			System.out.println("Key is present in the map");
@@ -36,7 +51,7 @@ public class Collections_hashmap {
 			System.out.println("Key is not present in the map");
 		}
 	
-	   //if we want to key only key integer 
+	   //if we want to only key
 		System.out.println(map.get("China"));
 		System.out.println(map.get("Indonesia"));
 		
@@ -45,6 +60,7 @@ public class Collections_hashmap {
 		 Definition:
          A HashMap in Java is a collection that stores data in key-value pairs. 
          Each key is unique, and each key maps to exactly one value.
+         And it will print the values unorder wise 
 
          Purpose:
          The main purpose of using a HashMap is to quickly find, update, 
@@ -53,13 +69,6 @@ public class Collections_hashmap {
 		 
 		 
 		 */
-		
-		
-		
-	
-	
-	
-	
-	}
+		}
 
 }

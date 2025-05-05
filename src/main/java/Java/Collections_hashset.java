@@ -14,50 +14,49 @@ public class Collections_hashset {
 
 	private static void Hashset() {
 		
-		HashSet<Integer>  set = new HashSet<Integer>();
+		HashSet<String>  set = new HashSet<String>();
 		
-		//Insert
-		set.add(1);
-		set.add(2);
-		set.add(3);
-	    set.add(1);
-	    
-	    //Print all elements
-      // System.out.println(set);
-       
-       //Search
-	    
-	 /*   if(set.contains(1))
-	    {
-	    	System.out.println("set contains 1");
-	    }
-	    
-       if(!set.contains(6))
-       {
-    	   System.out.println("does not contains");
-       }
-	
-	
-	//Delete
-       set.remove(1);
-       {
-    	   if(!set.contains(1))
-    	   {
-    		   System.out.println("Does not contain 1 - we delete");
-    	   }
-       }*/
-	
-	//size
-       
-       System.out.println("size of set is : " + set.size());
-	
-       
+		//insert an element
+		set.add("Banana");
+		set.add("Apple");
+		set.add("Carrot");
+		set.add("Apple");
+		System.out.println(set);
+		
+	/*	//Remove Element
+		set.remove("Apple");
+		System.out.println(set);
+		
+		//Check if the element is exists
+		
+		if(set.contains("Carrot"))
+		{
+			System.out.println(set.contains("Carrot"));
+		}
+		
+		//Size of Hashset
+		set.size();
+		System.out.println(set.size());*/
+		
+		//iterate through Elements
+		
+		for(String fruit :set) 
+		{
+			System.out.println(fruit);
+		}
+		
+		
+		//Clear the set
+		set.clear();
+		System.out.println(set);
+		
 	}
 }
 
    /*Definition:
    A Set in Java is a collection that cannot contain duplicate elements. 
    It is used to store unique values only.
+   HashSet will not print orderwise, it is unpredictable 
 
    Purpose:
    The main purpose of using a Set is to make sure that no duplicate values are stored 
