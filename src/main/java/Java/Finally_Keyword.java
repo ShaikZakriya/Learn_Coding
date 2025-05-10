@@ -4,9 +4,9 @@ public class Finally_Keyword {
 
 	public static void main(String[] args) {
 		
-		//finally_keyword();
+		finally_keyword();
 		
-		finally_task2();
+		//finally_task2();
 
 	}
 
@@ -14,7 +14,7 @@ public class Finally_Keyword {
 	
 		try 
 		{
-			int a=10, b=0; int c= a/b;
+			int a=10, b=50; int c= a/b;
 			System.out.println("Result: " + c);
 			
 		}
@@ -39,11 +39,11 @@ public class Finally_Keyword {
 		
 		try 
 		{
-			System.out.println("Learn coding");
-			int a =20; int b=2; int c=a/b;
+			//System.out.println("Learn coding");
+			int a =20; int b=0; int c=a/b;
 			System.out.println(c);
 			
-			System.out.println("Coding"); 
+			//System.out.println("Coding"); 
 				
 		}
 		
@@ -52,10 +52,10 @@ public class Finally_Keyword {
 			System.out.println("Can't divide by zero");
 		}
 		
-		finally 
+		/*finally 
 		{
 			System.out.println("Testing");
-		}
+		}*/
 		
 		
 		
