@@ -20,13 +20,13 @@ public class Read_From_Excel_Data {
 
 	private static void Read_Data() throws IOException {
 	     
-	  //Creating a file object with the path to the excel file 
+	  //This is file object
 		File file = new File("C:\\Users\\HP\\eclipse-workspace\\Learn_Coding\\TestData\\LoginData.xlsx");
 			
 	  //Now creating a fileinputstream to read the file
 		FileInputStream fis = new FileInputStream(file);
         
-      //Creating a workbook instance to access the excel file content
+      //This workbook will open the Excel file 
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
         
 	  //Now Accessing the sheet named Sheet2 from the workbook

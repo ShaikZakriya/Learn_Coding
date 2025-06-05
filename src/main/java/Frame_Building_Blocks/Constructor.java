@@ -17,13 +17,18 @@ public class Constructor {
 	}
 
 	
-		
-	public void car()
+	   public void car()
 		
 		{
 			System.out.println("car");
 		}
 	
+       public Constructor()
+    
+    {
+    	System.out.println("Constructor");
+    }
+		
 
 
         public void Bike()
@@ -40,11 +45,7 @@ public class Constructor {
        }
 
 
-        public Constructor()
         
-        {
-        	System.out.println("Constructor");
-        }
 
 }
 
