@@ -10,44 +10,40 @@ public class Constructor {
 	public static void main(String[] args) throws InterruptedException {
 		
 		Constructor obj = new Constructor();
-	    obj.car();
+	    obj.car("Coding", 50);
 	    obj.Bike();
-	   
+	    Constructor obj1 = new Constructor("Automation", 'C');
+	    
 	
 	}
 
 	
-	   public void car()
-		
-		{
-			System.out.println("car");
-		}
-	
-       public Constructor()
-    
-    {
-    	System.out.println("Constructor");
-    }
-		
+	public void car(String x, int b)
 
+	{
+		System.out.println(x + " " + b);
+	}
 
-        public void Bike()
-       
-        {
-	       System.out.println("Bike");
-        }
-        
-    
-        public void Thar()
+	public Constructor(String n, char c) {
+		System.out.println(n + " " + c);
+	}
 
-       {
-         System.out.println("Thar");
-       }
+	public Constructor()
 
+	{
+		System.out.println("Constructor");
+	}
 
-        
+	public void Bike()
+
+	{
+		System.out.println("Bike");
+	}
+
+	public void Thar()
+
+	{
+		System.out.println("Thar");
+	}
 
 }
-
-
-

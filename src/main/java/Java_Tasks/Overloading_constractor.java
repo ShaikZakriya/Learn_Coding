@@ -12,24 +12,22 @@ public class Overloading_constractor {
 	    
           
 	}
-    //This is default constactor
-	public Overloading_constractor()
-	{
+
+	// This is default constactor
+	public Overloading_constractor() {
 		System.out.println("This is a non-parametarized constractor");
 	}
-	
-	public Overloading_constractor(int a)
-	{
+
+	public Overloading_constractor(int a) {
 		System.out.println(a);
 	}
-	public Overloading_constractor(String x, boolean b)
-	{
-		System.out.println(x+" "+b);
+
+	public Overloading_constractor(String x, boolean b) {
+		System.out.println(x + " " + b);
 	}
-	public Overloading_constractor(char c, long L)
-	{
-		System.out.println(c+" "+L);
+
+	public Overloading_constractor(char c, long L) {
+		System.out.println(c + " " + L);
 	}
-    
-     
+
 }
