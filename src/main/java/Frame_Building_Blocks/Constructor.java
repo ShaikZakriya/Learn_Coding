@@ -8,16 +8,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Constructor {
 
 	public static void main(String[] args) throws InterruptedException {
-		
+
 		Constructor obj = new Constructor();
-	    obj.car("Coding", 50);
-	    obj.Bike();
-	    Constructor obj1 = new Constructor("Automation", 'C');
-	    
-	
+		obj.car("Coding", 50);
+		obj.Bike();
+		Constructor obj1 = new Constructor("Automation", 'C');
+
 	}
 
-	
 	public void car(String x, int b)
 
 	{

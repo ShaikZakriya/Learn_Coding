@@ -13,7 +13,7 @@ public class Try_catch {
 		try
 		{
 			System.out.println("Learn Coding");
-			int a=20, b=2, c;
+			int a=20, b=0, c;
 			c=a/b;
 			System.out.println(c);
 		}
