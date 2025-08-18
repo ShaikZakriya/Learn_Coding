@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="18" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-22T23:05:31 IST" name="Default suite" finished-at="2025-07-22T23:21:10 IST" duration-ms="938673">
+    <groups>
+    </groups>
+    <test started-at="2025-07-22T23:05:31 IST" name="Default test" finished-at="2025-07-22T23:21:10 IST" duration-ms="938673">
+      <class name="Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation">
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:05:31 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:06:06 IST" duration-ms="35207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sign in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:06:06 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:07:09 IST" duration-ms="62465" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[New customer? Start here.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='nav-al-container']//span[text()='New customer? Start here.']"}
+  (Session info: chrome=138.0.7204.158)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9f8fe26a3c22f9731fbd614b3cb7be7, findElement {using=xpath, value=//div[@id='nav-al-container']//span[text()='New customer? Start here.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50702}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50702/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b9f8fe26a3c22f9731fbd614b3cb7be7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='nav-al-container']//span[text()='New customer? Start here.']"}
+  (Session info: chrome=138.0.7204.158)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9f8fe26a3c22f9731fbd614b3cb7be7, findElement {using=xpath, value=//div[@id='nav-al-container']//span[text()='New customer? Start here.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50702}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50702/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b9f8fe26a3c22f9731fbd614b3cb7be7
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation.checkSignInXpaths(AmazonTestMenu.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:07:10 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:08:32 IST" duration-ms="82283" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Your Lists]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='nav-al-container']//span[text()='Your Lists']"}
+  (Session info: chrome=138.0.7204.158)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1037b4e32590ebd43d650495c946da17, findElement {using=xpath, value=//div[@id='nav-al-container']//span[text()='Your Lists']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50803/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1037b4e32590ebd43d650495c946da17]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='nav-al-container']//span[text()='Your Lists']"}
+  (Session info: chrome=138.0.7204.158)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1037b4e32590ebd43d650495c946da17, findElement {using=xpath, value=//div[@id='nav-al-container']//span[text()='Your Lists']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50803/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1037b4e32590ebd43d650495c946da17
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation.checkSignInXpaths(AmazonTestMenu.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:08:32 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:09:25 IST" duration-ms="52952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Create a Wish List]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:09:25 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:09:54 IST" duration-ms="28346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wish from Any Website]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:09:54 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:10:31 IST" duration-ms="37762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Baby Wishlist]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:10:31 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:11:20 IST" duration-ms="48428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Discover Your Style]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:11:20 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:12:02 IST" duration-ms="41833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Explore Showroom]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:12:02 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:12:28 IST" duration-ms="26775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Your Account]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:12:28 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:12:56 IST" duration-ms="27495" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Your Account]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:12:56 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:13:55 IST" duration-ms="59487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Your Orders]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:13:55 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:14:53 IST" duration-ms="58072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Your Wish List]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:14:53 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:15:37 IST" duration-ms="43315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Your Recommendations]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:15:37 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:16:08 IST" duration-ms="31617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Your Prime Membership]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:16:08 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:17:29 IST" duration-ms="80764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Your Prime Video]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:17:29 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:17:59 IST" duration-ms="29279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Your Subscribe & Save Items]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:17:59 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:18:57 IST" duration-ms="58852" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Memberships & Subscriptions]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:18:57 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:19:30 IST" duration-ms="32492" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Your Seller Account]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:19:30 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:20:12 IST" duration-ms="41903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manage Your Content and Devices]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+        <test-method signature="checkSignInXpaths(java.lang.String)[pri:0, instance:Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation@6743e411]" started-at="2025-07-22T23:20:12 IST" name="checkSignInXpaths" data-provider="signInMenuTexts" finished-at="2025-07-22T23:21:09 IST" duration-ms="57630" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Register for a free Business Account]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInXpaths -->
+      </class> <!-- Frame_Building_Blocks.AmazonTestMenu$ClickOnElemenetUsingDataProviderAnnotation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

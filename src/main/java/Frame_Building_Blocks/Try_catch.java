@@ -21,11 +21,11 @@ public class Try_catch {
 		{
 			System.out.println("Can't divided by zero");
 		}
-		finally
+		/*finally
 		{
 			System.out.println("Finished");
 		}
-	    System.out.println("Main method ended");
+	    System.out.println("Main method ended");*/
 		
 	}
 

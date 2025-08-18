@@ -16,22 +16,12 @@ public class Constructor {
 
 	}
 
-	public void car(String x, int b)
-
-	{
-		System.out.println(x + " " + b);
-	}
-
-	public Constructor(String n, char c) {
-		System.out.println(n + " " + c);
-	}
-
 	public Constructor()
 
 	{
 		System.out.println("Constructor");
 	}
-
+	
 	public void Bike()
 
 	{
@@ -43,5 +33,18 @@ public class Constructor {
 	{
 		System.out.println("Thar");
 	}
+	
+	public void car(String x, int b)
+
+	{
+		System.out.println(x + " " + b);
+	}
+
+	public Constructor(String n, char c) {
+		System.out.println(n + " " + c);
+	}
+
+	
+	
 
 }
